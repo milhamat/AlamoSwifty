@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D696B147E1F649E3568E58B1 /* Pods_JsonFetchAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D1D66A47F11999A7B62AEB /* Pods_JsonFetchAlamofire.framework */; };
 		DA6324C025EBB33C000B56F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6324BF25EBB33C000B56F0 /* AppDelegate.swift */; };
 		DA6324C225EBB33C000B56F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6324C125EBB33C000B56F0 /* SceneDelegate.swift */; };
 		DA6324C425EBB33C000B56F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6324C325EBB33C000B56F0 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A30E226D79A325A4571A07C4 /* Pods-JsonFetchAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonFetchAlamofire.release.xcconfig"; path = "Target Support Files/Pods-JsonFetchAlamofire/Pods-JsonFetchAlamofire.release.xcconfig"; sourceTree = "<group>"; };
+		AF367063E3B808CC60928689 /* Pods-JsonFetchAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonFetchAlamofire.debug.xcconfig"; path = "Target Support Files/Pods-JsonFetchAlamofire/Pods-JsonFetchAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		B2D1D66A47F11999A7B62AEB /* Pods_JsonFetchAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonFetchAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6324BC25EBB33C000B56F0 /* JsonFetchAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonFetchAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6324BF25EBB33C000B56F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6324C125EBB33C000B56F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D696B147E1F649E3568E58B1 /* Pods_JsonFetchAlamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				DA6324BE25EBB33C000B56F0 /* JsonFetchAlamofire */,
 				DA6324BD25EBB33C000B56F0 /* Products */,
+				E20B41C3718DA4C7B9E80721 /* Pods */,
+				E0EF12B6837A7FDED590AEB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = JsonFetchAlamofire;
 			sourceTree = "<group>";
 		};
+		E0EF12B6837A7FDED590AEB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2D1D66A47F11999A7B62AEB /* Pods_JsonFetchAlamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E20B41C3718DA4C7B9E80721 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF367063E3B808CC60928689 /* Pods-JsonFetchAlamofire.debug.xcconfig */,
+				A30E226D79A325A4571A07C4 /* Pods-JsonFetchAlamofire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA6324D025EBB33E000B56F0 /* Build configuration list for PBXNativeTarget "JsonFetchAlamofire" */;
 			buildPhases = (
+				C519AF7835C94B52C358E249 /* [CP] Check Pods Manifest.lock */,
 				DA6324B825EBB33C000B56F0 /* Sources */,
 				DA6324B925EBB33C000B56F0 /* Frameworks */,
 				DA6324BA25EBB33C000B56F0 /* Resources */,
+				7E0ABF43EEA684434E83D4C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E0ABF43EEA684434E83D4C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JsonFetchAlamofire/Pods-JsonFetchAlamofire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JsonFetchAlamofire/Pods-JsonFetchAlamofire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JsonFetchAlamofire/Pods-JsonFetchAlamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C519AF7835C94B52C358E249 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JsonFetchAlamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA6324B825EBB33C000B56F0 /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		DA6324D125EBB33E000B56F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF367063E3B808CC60928689 /* Pods-JsonFetchAlamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		DA6324D225EBB33E000B56F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30E226D79A325A4571A07C4 /* Pods-JsonFetchAlamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
